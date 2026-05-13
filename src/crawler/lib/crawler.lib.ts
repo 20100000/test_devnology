@@ -10,11 +10,19 @@ interface Laptop {
     link: string;
     evaluation: string;
 }
-
-async function getProducts(url: string, filter: string): Promise<Laptop[]> {
+async function getHTMLPage(url: string) {
     const { data } = await axios.get(url);
-    const baseUrl = 'https://webscraper.io';
+    return data;
+}
+async function getTotalPage(url: string) {
+    const data = await getHTMLPage(url);
     const $ = cheerio.load(data);
+    return parseInt($('li.page-item').eq(-2).text().trim(), 10) || 1;
+}
+async function getProducts(url: string, filter: string): Promise<Laptop[]> {
+    const data = await getHTMLPage(url);
+    const $ = cheerio.load(data);
+    const baseUrl = 'https://webscraper.io';
     const laptops: Laptop[] = [];
 
     $('.thumbnail').each((_i, item) => {
@@ -35,8 +43,9 @@ async function getProducts(url: string, filter: string): Promise<Laptop[]> {
 
     return laptops;
 }
-export const crawlerProcess = async (url: string, totalPage:number, filterNotebook: string) => {
+export const crawlerProcess = async (url: string, filterNotebook: string) => {
     let products:any = []
+    const totalPage = await getTotalPage(url);
     for (let p = 1; p <= totalPage; p++) {
         let urlPage =  url + p.toString();
         await getProducts(urlPage, filterNotebook).then((data) => {

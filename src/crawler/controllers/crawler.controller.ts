@@ -5,7 +5,7 @@ export const getProducts = async (req: Request, res: Response) => {
     const { product } = req.params;
     const url = 'https://webscraper.io/test-sites/e-commerce/static/computers/laptops?page=';
     try {
-        const products:any = await crawlerProcess(url, 20, product)
+        const products:any = await crawlerProcess(url, product)
         if (! products.length) {
             throw new Error('Resource not found', { cause: { statusCode: 404 } });
         }
