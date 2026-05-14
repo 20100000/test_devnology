@@ -1,5 +1,5 @@
-import axios from 'axios';
 import * as cheerio from 'cheerio';
+import { client } from './signature.lib.js';
 
 interface Laptop {
     title: string;
@@ -10,8 +10,9 @@ interface Laptop {
     link: string;
     evaluation: string;
 }
+
 async function getHTMLPage(url: string) {
-    const { data } = await axios.get(url);
+    const { data } = await client.get(url);
     return data;
 }
 async function getTotalPage(url: string) {
