@@ -1,33 +1,33 @@
-<h1>Teste API com crawler</h1>
-<p>This project object to be a programming test for the company DevNology, developed by candidate Tiago Honorio.</p>
+<h1>Teste API com Crawler</h1>
+<p>Este projeto tem como objetivo de avaliação para a empresa DevNology, desenvolvido polo candidato Tiago Honorio.</p>
 <h3>Tecnologias Usadas</h3>
-Typescript with Node.js<br>
-Framework Express<br>
+Typescript com Node.js<br>
+Framework Express para rotas das APIs<br>
 Crawler e Curl<br>
-Swagger for documentation<br>
-Framework Docker compose para containerization<br>
-<h3>Ports used</h3>
+Swagger documentação APIs<br>
+Framework Docker compose para conteinerização<br>
+<h3>Port usada</h3>
 3000 Back-end API<br>
-<h3>Example for testing the application</h3>
-<h4>1Â° Clone the project</h4> 
+<h3>Passo a passo para iniciar o projeto</h3>
+<h4>1° Clone o projeto</h4>
 <pre>
-    git clone git@github.com:20100000/test_devnology.git<br/>
-    cd api_typescript_test
+git clone git@github.com:20100000/test_devnology.git<br/>
+cd api_typescript_test
 </pre>
+<h4>2° Iniciar contanier </h4>
 <pre>
-    docker-compose up --build
+docker compose up --build ou docker-compose up --build
+
 </pre>
-check containers command.
+Para verificar container.
 <pre>docker ps</pre>
-
+<h4>Casa deseja iniciar projeto sem docker add comandos detro do diretorio test_devnology</h4>
 <pre>
-   
-</pre>
-commands:
-<pre>
-    
+npm run build <br>
+npm run start
 </pre>
 
-<h4></h4>
-<pre>http://localhost:3000/api-docs/</pre>
+<h4>Para test API de busca noteBooks</h4>
+<pre>http://localhost:3000/api-docs/ ou http://localhost:3000/crawler/lenovo</pre>
+<h4>A busca por notebook pode ser variavel ex: http://localhost:3000/crawler/lenovo ou http://localhost:3000/crawler/hp
 Mail: tiago_honorio2010@hotmail.com
