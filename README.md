@@ -31,12 +31,14 @@ npm run start
 <pre>http://localhost:3000/api-docs/ ou http://localhost:3000/crawler/lenovo</pre>
 <p>A busca por notebook pode ser variavel ex:<br> http://localhost:3000/crawler/<strong>lenovo</strong> ou http://localhost:3000/crawler/<strong>hp</strong></p>
 <h4>Para usar Crawler sendo consumido por outro serviço.
-<pre>
   <p>Importe o crawler e assinatura Ex:</p>
+<pre>
   import { crawlerProcess } from '../lib/crawler.lib.js'
-  <p>Use o methodo crawlerProcess e passe dois parametros obrigatorios url que é o link da pagina<br> como string e titulo do notebook como uma string também o mesmo serve como filtro de busca Ex:</p>
+</pre>
+<p>Use o methodo crawlerProcess e passe dois parametros obrigatorios url que é o link da pagina<br> como string e titulo do notebook como uma string também o mesmo serve como filtro de busca Ex:
+</p>
+<pre> 
   const notebooks:any = await crawlerProcess('https://webscraper.io/test-sites/e-commerce/static/computers/laptops?page=', 'Lenovo')
-
 </pre>
 <br>
 Mail: tiago_honorio2010@hotmail.com
