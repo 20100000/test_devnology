@@ -29,6 +29,6 @@ npm run start
 
 <h4>Para teste API de busca noteBooks</h4>
 <pre>http://localhost:3000/api-docs/ ou http://localhost:3000/crawler/lenovo</pre>
-<h4>A busca por notebook pode ser variavel ex:<br> http://localhost:3000/crawler/lenovo ou http://localhost:3000/crawler/hp
+<p>A busca por notebook pode ser variavel ex:<br> http://localhost:3000/crawler/<strong>lenovo</strong> ou http://localhost:3000/crawler/<strong>hp</strong></p>
 <br>
 Mail: tiago_honorio2010@hotmail.com
