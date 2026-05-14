@@ -1,12 +1,12 @@
 <h1>Teste API com Crawler</h1>
-<p>Este projeto tem como objetivo de avaliação para a empresa DevNology, desenvolvido polo candidato Tiago Honorio.</p>
+<p>Este projeto tem como objetivo de avaliação para a empresa DevNology, desenvolvido pelo candidato Tiago Honorio.</p>
 <h3>Tecnologias Usadas</h3>
 Typescript com Node.js<br>
 Framework Express para rotas das APIs<br>
-Crawler e Curl<br>
+Crawler e Curl (cheerio, axios)<br>
 Swagger documentação APIs<br>
 Framework Docker compose para conteinerização<br>
-<h3>Port usada</h3>
+<h3>Porta usada</h3>
 3000 Back-end API<br>
 <h3>Passo a passo para iniciar o projeto</h3>
 <h4>1° Clone o projeto</h4>
@@ -27,7 +27,8 @@ npm run build <br>
 npm run start
 </pre>
 
-<h4>Para test API de busca noteBooks</h4>
+<h4>Para teste API de busca noteBooks</h4>
 <pre>http://localhost:3000/api-docs/ ou http://localhost:3000/crawler/lenovo</pre>
-<h4>A busca por notebook pode ser variavel ex: http://localhost:3000/crawler/lenovo ou http://localhost:3000/crawler/hp
+<h4>A busca por notebook pode ser variavel ex:<br> http://localhost:3000/crawler/lenovo ou http://localhost:3000/crawler/hp
+<br>
 Mail: tiago_honorio2010@hotmail.com
