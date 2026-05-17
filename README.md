@@ -1,4 +1,4 @@
-# ?? Teste API com Crawler - DevNology
+# ğŸš€ Teste API com Crawler - DevNology
 
 <p align="center">
   <img src="https://shields.io" alt="TypeScript" />
@@ -8,29 +8,29 @@
   <img src="https://shields.io" alt="Swagger" />
 </p>
 
-Este projeto foi desenvolvido como um desafio técnico de avaliação para a empresa **DevNology**. A aplicação consiste em uma API REST integrada a um Web Crawler que realiza raspagem de dados de e-commerce e filtra notebooks por marca.
+Este projeto foi desenvolvido como um desafio tÃ©cnico de avaliaÃ§Ã£o para a empresa **DevNology**. A aplicaÃ§Ã£o consiste em uma API REST integrada a um Web Crawler que realiza raspagem de dados de e-commerce e filtra notebooks por marca.
 
 ---
 
-## ??? Tecnologias Utilizadas
+## ğŸ› ï¸ Tecnologias Utilizadas
 
 - **Backend:** Node.js com TypeScript
 - **Framework Web:** Express
 - **Web Scraping:** Cheerio & Axios
-- **Documentação:** Swagger UI
-- **Conteinerização:** Docker & Docker Compose
+- **DocumentaÃ§Ã£o:** Swagger UI
+- **ConteinerizaÃ§Ã£o:** Docker & Docker Compose
 
 ---
 
-## ?? Portas Utilizadas
+## âš™ï¸ Portas Utilizadas
 
-- `3000`: Porta padrão da API Backend e Documentação.
+- `3000`: Porta padrÃ£o da API Backend e DocumentaÃ§Ã£o.
 
 ---
 
-## ?? Como Iniciar o Projeto
+## ğŸš€ Como Iniciar o Projeto
 
-### 1. Clonar o Repositório
+### 1. Clonar o RepositÃ³rio
 ```bash
 git clone git@github.com:20100000/test_devnology.git
 cd api_typescript_test
@@ -41,15 +41,15 @@ Para buildar e iniciar o container automaticamente, execute:
 ```bash
 docker compose up --build
 ```
-*(Caso use uma versão mais antiga do Docker, utilize `docker-compose up --build`)*
+*(Caso use uma versÃ£o mais antiga do Docker, utilize `docker-compose up --build`)*
 
-Para verificar se o container está rodando perfeitamente:
+Para verificar se o container estÃ¡ rodando perfeitamente:
 ```bash
 docker ps
 ```
 
 ### 3. Executar Localmente (Sem Docker)
-Caso prefira rodar diretamente na sua máquina, instale as dependências e inicie os scripts dentro do diretório raiz:
+Caso prefira rodar diretamente na sua mÃ¡quina, instale as dependÃªncias e inicie os scripts dentro do diretÃ³rio raiz:
 ```bash
 npm install
 npm run build
@@ -58,30 +58,30 @@ npm run start
 
 ---
 
-## ?? Rotas da API e Testes
+## ğŸ“Œ Rotas da API e Testes
 
-Após iniciar o servidor, você poderá interagir com a aplicação através dos seguintes endpoints:
+ApÃ³s iniciar o servidor, vocÃª poderÃ¡ interagir com a aplicaÃ§Ã£o atravÃ©s dos seguintes endpoints:
 
 
-| Tipo | Endpoint | Descrição |
+| Tipo | Endpoint | DescriÃ§Ã£o |
 | :--- | :--- | :--- |
-| **GET** | `http://localhost:3000/api-docs/` | Interface do Swagger com a documentação interativa da API. |
+| **GET** | `http://localhost:3000/api-docs/` | Interface do Swagger com a documentaÃ§Ã£o interativa da API. |
 | **GET** | `http://localhost:3000/crawler/lenovo` | Executa o crawler filtrando por notebooks da marca **Lenovo**. |
 | **GET** | `http://localhost:3000/crawler/hp` | Executa o crawler filtrando por notebooks da marca **HP**. |
 
-> ?? **Nota:** O parâmetro final da rota `/crawler/:marca` é dinâmico. Você pode testar com diferentes marcas disponíveis no e-commerce alvo.
+> ğŸ’¡ **Nota:** O parÃ¢metro final da rota `/crawler/:marca` Ã© dinÃ¢mico. VocÃª pode testar com diferentes marcas disponÃ­veis no e-commerce alvo.
 
 ---
 
-## ?? Uso Interno do Crawler (Como Biblioteca)
+## ğŸ“¦ Uso Interno do Crawler (Como Biblioteca)
 
-Caso queira consumir a lógica do Crawler em outro serviço interno do seu código, basta importar o método e sua assinatura:
+Caso queira consumir a lÃ³gica do Crawler em outro serviÃ§o interno do seu cÃ³digo, basta importar o mÃ©todo e sua assinatura:
 
 ```typescript
 import { crawlerProcess } from '../lib/crawler.lib.js';
 
 async function buscarDados() {
-  // Parâmetros: (urlBase: string, termoDeBusca: string)
+  // ParÃ¢metros: (urlBase: string, termoDeBusca: string)
   const notebooks = await crawlerProcess(
     'https://webscraper.io', 
     'Lenovo'
@@ -90,10 +90,9 @@ async function buscarDados() {
   console.log(notebooks);
 }
 ```
-
 ---
 
-## ?? Contato
+## âœ‰ï¸ Contato
 
 Desenvolvido por **Tiago Honorio**  
-?? E-mail: [tiago_honorio2010@hotmail.com](mailto:tiago_honorio2010@hotmail.com)
+ğŸ“© E-mail: [tiago_honorio2010@hotmail.com](mailto:tiago_honorio2010@hotmail.com)
