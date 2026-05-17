@@ -33,7 +33,7 @@ Este projeto foi desenvolvido como um desafio técnico de avaliação para a emp
 
 ### 1. Clonar o Repositório
 ```bash
-git clone git@github.com:20100000/test_devnology.git
+git clone https://github.com/20100000/test_devnology.git
 cd api_typescript_test
 ```
 
