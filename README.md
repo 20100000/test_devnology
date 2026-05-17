@@ -1,12 +1,6 @@
 # 🚀 Teste API com Crawler - DevNology
 
-<p align="center">
-  <img src="https://shields.io" alt="TypeScript" />
-  <img src="https://shields.io" alt="Node.js" />
-  <img src="https://shields.io" alt="Express" />
-  <img src="https://shields.io" alt="Docker" />
-  <img src="https://shields.io" alt="Swagger" />
-</p>
+[TypeScript](https://shields.io) ![Node.js](https://shields.io) ![Express](https://shields.io) ![Docker](https://shields.io) ![Swagger](https://shields.io)
 
 Este projeto foi desenvolvido como um desafio técnico de avaliação para a empresa **DevNology**. A aplicação consiste em uma API REST integrada a um Web Crawler que realiza raspagem de dados de e-commerce e filtra notebooks por marca.
 
